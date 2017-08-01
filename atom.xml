@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.coolrabbit.xin/"/>
-  <updated>2017-08-01T07:17:35.113Z</updated>
+  <updated>2017-08-01T09:10:20.393Z</updated>
   <id>http://www.coolrabbit.xin/</id>
   
   <author>
@@ -19,15 +19,24 @@
     <title>Hexo静态博客</title>
     <link href="http://www.coolrabbit.xin/2017/08/01/other_hexo/"/>
     <id>http://www.coolrabbit.xin/2017/08/01/other_hexo/</id>
-    <published>2017-08-01T06:25:15.000Z</published>
-    <updated>2017-08-01T07:17:35.113Z</updated>
+    <published>2017-08-01T06:25:00.000Z</published>
+    <updated>2017-08-01T09:10:20.393Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;最近有时间折腾下个人博客，在对比了几家之后，最终决定用Hexo作为框架。选择Hexo的原因很多，首先是静态博客，服务器开销小。其次是简洁，支持markdown语法，用起来舒服。再次是可以直接发布到github pages上。最后是插件很多，可以DIY。&lt;br&gt;在博客搭建的过程中也踩了些坑，在这里做下记录，也方便大家搭建个人博客时做参考。&lt;/p&gt;
+&lt;hr&gt;
     
     </summary>
     
+      <category term="其他" scheme="http://www.coolrabbit.xin/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="hexo" scheme="http://www.coolrabbit.xin/tags/hexo/"/>
+    
+      <category term="NexT" scheme="http://www.coolrabbit.xin/tags/NexT/"/>
+    
+      <category term="博客" scheme="http://www.coolrabbit.xin/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
