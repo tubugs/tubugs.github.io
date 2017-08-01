@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="张旭,博客,hexo,web,人工智能,java,学习,进阶" />
+  <meta name="keywords" content="数字签名,安全," />
 
 
 
@@ -95,16 +95,40 @@
 
 
 
-<meta name="description" content="爱编程，爱生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张旭的BLOG">
-<meta property="og:url" content="http://www.coolrabbit.xin/tags/博客/index.html">
+<meta name="description" content="CA、数字证书这些概念一直理解的模模糊糊，直到看到阮一峰大神的一篇文章，一下子清楚了很多。文章举了一个很生动的例子来解释什么是数字证书、CA，具体如下。  转载自阮一峰大神的博客：数字签名是什么">
+<meta name="keywords" content="数字签名,安全">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数字签名是什么">
+<meta property="og:url" content="http://www.coolrabbit.xin/2017/08/01/数字签名是什么/index.html">
 <meta property="og:site_name" content="张旭的BLOG">
-<meta property="og:description" content="爱编程，爱生活">
+<meta property="og:description" content="CA、数字证书这些概念一直理解的模模糊糊，直到看到阮一峰大神的一篇文章，一下子清楚了很多。文章举了一个很生动的例子来解释什么是数字证书、CA，具体如下。  转载自阮一峰大神的博客：数字签名是什么">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-f2468f8707dba13d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-1671fbfc11cf8ef0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-c38a81603724a986.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-9e33e67bf26d5073.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-5a94c6907f313a8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-067caf1a8ca52415.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-37299c349debb3db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-ee9a8f9c21b15e5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-bc6ee6aa161b2816.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-4a2e0fa944335353.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-5c7cde240b0e0697.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-289fafe73a145045.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-fe22bb219a312368.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-6fcb6c98863a872d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-18f41a068dae78dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-0cd27e9e200bc8ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-8240a228c1e28d49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-5577e1d62e072017.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-f0f96f688288d681.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-25ef8a01a43d7530.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6226821-54fbfd11776b1da0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-08-01T13:07:30.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张旭的BLOG">
-<meta name="twitter:description" content="爱编程，爱生活">
+<meta name="twitter:title" content="数字签名是什么">
+<meta name="twitter:description" content="CA、数字证书这些概念一直理解的模模糊糊，直到看到阮一峰大神的一篇文章，一下子清楚了很多。文章举了一个很生动的例子来解释什么是数字证书、CA，具体如下。  转载自阮一峰大神的博客：数字签名是什么">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/6226821-f2468f8707dba13d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -132,13 +156,13 @@
 
 
 
-  <link rel="canonical" href="http://www.coolrabbit.xin/tags/博客/"/>
+  <link rel="canonical" href="http://www.coolrabbit.xin/2017/08/01/数字签名是什么/"/>
 
 
 
 
 
-  <title>标签: 博客 | 张旭的BLOG</title>
+  <title>数字签名是什么 | 张旭的BLOG</title>
   
 
 
@@ -173,7 +197,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -291,44 +315,225 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2>博客<small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.coolrabbit.xin/2017/08/01/数字签名是什么/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张旭">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张旭的BLOG">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">数字签名是什么</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-01T20:53:00+08:00">
+                2017-08-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/安全/" itemprop="url" rel="index">
+                    <span itemprop="name">安全</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/08/01/数字签名是什么/" class="leancloud_visitors" data-flag-title="数字签名是什么">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>CA、数字证书这些概念一直理解的模模糊糊，直到看到阮一峰大神的一篇文章，一下子清楚了很多。文章举了一个很生动的例子来解释什么是数字证书、CA，具体如下。</p>
+<blockquote>
+<p>转载自阮一峰大神的博客：<a href="http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html" target="_blank" rel="external">数字签名是什么</a></p>
+</blockquote>
+<hr>
+<a id="more"></a>
+<p>1） 鲍勃有两把钥匙，一把是公钥，另一把是私钥。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-f2468f8707dba13d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>2）鲍勃把公钥送给他的朋友们—-帕蒂、道格、苏珊—-每人一把。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-1671fbfc11cf8ef0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>3）苏珊要给鲍勃写一封保密的信。她写完后用鲍勃的公钥加密，就可以达到保密的效果。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-c38a81603724a986.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>4）鲍勃收信后，用私钥解密，就看到了信件内容。这里要强调的是，只要鲍勃的私钥不泄露，这封信就是安全的，即使落在别人手里，也无法解密。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-9e33e67bf26d5073.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>5）鲍勃给苏珊回信，决定采用”数字签名”。他写完后先用Hash函数，生成信件的摘要（digest）。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-5a94c6907f313a8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>6）然后，鲍勃使用私钥，对这个摘要加密，生成”数字签名”（signature）。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-067caf1a8ca52415.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>7）鲍勃将这个签名，附在信件下面，一起发给苏珊。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-37299c349debb3db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>8）苏珊收信后，取下数字签名，用鲍勃的公钥解密，得到信件的摘要。由此证明，这封信确实是鲍勃发出的。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-ee9a8f9c21b15e5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>9）苏珊再对信件本身使用Hash函数，将得到的结果，与上一步得到的摘要进行对比。如果两者一致，就证明这封信未被修改过。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-bc6ee6aa161b2816.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>10）复杂的情况出现了。道格想欺骗苏珊，他偷偷使用了苏珊的电脑，用自己的公钥换走了鲍勃的公钥。此时，苏珊实际拥有的是道格的公钥，但是还以为这是鲍勃的公钥。因此，道格就可以冒充鲍勃，用自己的私钥做成”数字签名”，写信给苏珊，让苏珊用假的鲍勃公钥进行解密。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-4a2e0fa944335353.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>11）后来，苏珊感觉不对劲，发现自己无法确定公钥是否真的属于鲍勃。她想到了一个办法，要求鲍勃去找”证书中心”（certificate authority，简称CA），为公钥做认证。证书中心用自己的私钥，对鲍勃的公钥和一些相关信息一起加密，生成”数字证书”（Digital Certificate）。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-5c7cde240b0e0697.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>12）鲍勃拿到数字证书以后，就可以放心了。以后再给苏珊写信，只要在签名的同时，再附上数字证书就行了。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-289fafe73a145045.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>13）苏珊收信后，用CA的公钥解开数字证书，就可以拿到鲍勃真实的公钥了，然后就能证明”数字签名”是否真的是鲍勃签的。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-fe22bb219a312368.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>14）下面，我们看一个应用”数字证书”的实例：https协议。这个协议主要用于网页加密。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-6fcb6c98863a872d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>15）首先，客户端向服务器发出加密请求。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-18f41a068dae78dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>16）服务器用自己的私钥加密网页以后，连同本身的数字证书，一起发送给客户端。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-0cd27e9e200bc8ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>17）客户端（浏览器）的”证书管理器”，有”受信任的根证书颁发机构”列表。客户端会根据这张列表，查看解开数字证书的公钥是否在列表之内。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-8240a228c1e28d49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>18）如果数字证书记载的网址，与你正在浏览的网址不一致，就说明这张证书可能被冒用，浏览器会发出警告。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-5577e1d62e072017.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>19）如果这张数字证书不是由受信任的机构颁发的，浏览器会发出另一种警告。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-f0f96f688288d681.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>20）如果数字证书是可靠的，客户端就可以使用证书中的服务器公钥，对信息进行加密，然后与服务器交换加密信息。<br><img src="http://upload-images.jianshu.io/upload_images/6226821-25ef8a01a43d7530.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<hr>
+<p>最后再附上一张整体的图来说明<br><img src="http://upload-images.jianshu.io/upload_images/6226821-54fbfd11776b1da0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 
-      <h3 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/08/01/other_hexo/" itemprop="url">
-              
-                <span itemprop="name">Hexo静态博客</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h3>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-01T14:25:00+08:00"
-              content="2017-08-01" >
-          08-01
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      张旭
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.coolrabbit.xin/2017/08/01/数字签名是什么/" title="数字签名是什么">http://www.coolrabbit.xin/2017/08/01/数字签名是什么/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数字签名/" rel="tag"># 数字签名</a>
+          
+            <a href="/tags/安全/" rel="tag"># 安全</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/01/other_hexo/" rel="next" title="Hexo静态博客">
+                <i class="fa fa-chevron-left"></i> Hexo静态博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -336,6 +541,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
 
         </div>
         
@@ -559,10 +770,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
