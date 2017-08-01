@@ -95,16 +95,17 @@
 
 
 
-<meta name="description" content="爱编程，爱生活">
+<meta name="description" content="body {             padding: 100px;         }          .float_item {             border: 3px solid red;             width: 400px;             text-align: center;         }">
 <meta property="og:type" content="website">
 <meta property="og:title" content="张旭的BLOG">
-<meta property="og:url" content="http://www.coolrabbit.xin/categories/web/index.html">
+<meta property="og:url" content="http://www.coolrabbit.xin/blogs/css_float/index2.html">
 <meta property="og:site_name" content="张旭的BLOG">
-<meta property="og:description" content="爱编程，爱生活">
+<meta property="og:description" content="body {             padding: 100px;         }          .float_item {             border: 3px solid red;             width: 400px;             text-align: center;         }">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-01T00:44:16.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="张旭的BLOG">
-<meta name="twitter:description" content="爱编程，爱生活">
+<meta name="twitter:description" content="body {             padding: 100px;         }          .float_item {             border: 3px solid red;             width: 400px;             text-align: center;         }">
 
 
 
@@ -132,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://www.coolrabbit.xin/categories/web/"/>
+  <link rel="canonical" href="http://www.coolrabbit.xin/blogs/css_float/index2.html"/>
 
 
 
 
 
-  <title>分类: web | 张旭的BLOG</title>
+  <title> | 张旭的BLOG</title>
   
 
 
@@ -173,7 +174,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -291,73 +292,60 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2>web<small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h2 class="post-title" itemprop="name headline"></h2>
+
+
+
+</header>
 
     
-      
+    
+      <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            padding: 100px;
+        }
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+        .float_item {
+            border: 3px solid red;
+            width: 400px;
+            text-align: center;
+        }
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/31/web_performance_yahoo/" itemprop="url">
-              
-                <span itemprop="name">web性能优化实践</span>
-              
-            </a>
-        
-      </h3>
+        .left {
+            width: 50%;
+            height: 150px;
+            line-height: 150px;
+            background: rgba(0, 0, 0, 0.3);
+            float: left;
+        }
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-31T15:52:00+08:00"
-              content="2017-07-31" >
-          07-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        .right {
+            width: 50%;
+            height: 150px;
+            line-height: 150px;
+            float: left;
+            background: rgba(0, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="float_item">
+    <div class="left">左侧浮动块</div>
+    <div class="right">右侧浮动块</div>
+    <div style="clear:both;"></div>
+</div>
+</body>
+</html>
 
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/30/web_tools/" itemprop="url">
-              
-                <span itemprop="name">web开发小工具</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-30T08:28:00+08:00"
-              content="2017-07-30" >
-          07-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
-
-  
-
+  </div>
 
 
           </div>
@@ -365,6 +353,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
 
         </div>
         
