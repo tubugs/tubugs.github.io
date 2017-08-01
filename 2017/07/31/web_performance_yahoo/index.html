@@ -108,7 +108,7 @@
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_performance_yahoo/pasted-4.png">
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_performance_yahoo/pasted-6.png">
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_performance_yahoo/pasted-5.png">
-<meta property="og:updated_time" content="2017-08-01T07:01:25.691Z">
+<meta property="og:updated_time" content="2017-08-01T09:39:27.221Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="web性能优化实践">
 <meta name="twitter:description" content="用户体验这几年被提及的越来越多，产品不再仅仅满足于实现功能，对于用户的使用感受也越来越重视。加载延迟、操作卡顿这些性能问题，都会严重影响用户体验，尤其在手机端，这些问题会被放大。那么如何来做性能优化呢？雅虎的工程师，总结了一套web性能优化最佳实践，业内俗称雅虎军规，雅虎军规目前一共35条，写的非常详细。本文参考雅虎军规，侧重于实践，结合项目来看下如何做优化，以及优化所带来的提升。">
@@ -434,7 +434,7 @@
 <p>实际使用时，我将ECS作为CDN的回源服务器，先对ECS上的资源做了处理，通过nginx开启gzip压缩（配置代码如下）。然而阿里云的CDN并不是像我想的那样，将我给他的东西原封不动的给用户，阿里云默认并不开启gzip压缩，需要自己去设置下。</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">gzip</span>  <span class="literal">on</span>;</div><div class="line"><span class="attribute">gzip_min_length</span> <span class="number">1k</span>;</div><div class="line"><span class="attribute">gzip_buffers</span> <span class="number">4</span> <span class="number">16k</span>;</div><div class="line"><span class="comment">#gzip_http_version 1.0;</span></div><div class="line"><span class="attribute">gzip_comp_level</span> <span class="number">1</span>;</div><div class="line"><span class="attribute">gzip_types</span> application/javascript text/css application/json image/jpeg image/png;</div><div class="line"><span class="attribute">gzip_vary</span> <span class="literal">off</span>;</div><div class="line"><span class="attribute">gzip_disable</span> <span class="string">"MSIE [1-6]\."</span>;</div></pre></td></tr></table></figure>
 <p>加速后的效果<br><img src="\images\web_performance_yahoo\pasted-4.png" alt="upload successful"></p>
-<h4 id="过期时间"><a href="#过期时间" class="headerlink" title="过期时间"></a>过期时间</h4><p>参考facebook的过期时间设置，我也添加了相应的cache-control和expires头，设置成永不过期，如果需要更新，可以通过构建加md5后缀的方式来绕开缓存。截图里还有两个很重要的响应头，ETag和Last-Modified，大家可以自行百度看下他俩的作用。<br>不过通过chrome进行测试发现，加不加这两个头对于资源是否重新请求影响不大。个人猜测应该是现代浏览器比较智能，可以基于资源类型判断是否需要缓存。所以对于这点是否要优化，我也持保留意见。</p>
+<h4 id="过期时间"><a href="#过期时间" class="headerlink" title="过期时间"></a>过期时间</h4><p>参考facebook的过期时间设置，我也添加了相应的cache-control和expires头，设置成永不过期，如果需要更新，可以通过构建加md5后缀的方式来绕开缓存。截图里还有两个很重要的响应头，ETag和Last-Modified，大家可以自行百度看下他俩的作用。<br>不过通过chrome进行测试发现，加不加这两个头对于资源是否重新请求影响不大。个人猜测应该是现代浏览器比较智能，可以基于资源类型判断是否需要缓存。所以对于这点是否要优化，我也持保留意见。后续也会对这块进行深入学习，更新这块的知识点。</p>
 <p><img src="\images\web_performance_yahoo\pasted-6.png" alt="upload successful"><br><img src="\images\web_performance_yahoo\pasted-5.png" alt="upload successful"></p>
 <h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>性能优化过程中还有几个比较重要的点，因为vue框架已经帮我们做过，我们可能并未察觉，但我要在这里再提下。</p>
 <ol>
