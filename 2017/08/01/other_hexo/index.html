@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="张旭的BLOG">
 <meta property="og:description" content="最近有时间折腾下个人博客，在对比了几家之后，最终决定用Hexo作为框架。选择Hexo的原因很多，首先是静态博客，服务器开销小。其次是简洁，支持markdown语法，用起来舒服。再次是可以直接发布到github pages上。最后是插件很多，可以DIY。在博客搭建的过程中也踩了些坑，在这里做下记录，也方便大家搭建个人博客时做参考。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-01T09:36:37.207Z">
+<meta property="og:updated_time" content="2017-08-02T00:43:00.908Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo静态博客">
 <meta name="twitter:description" content="最近有时间折腾下个人博客，在对比了几家之后，最终决定用Hexo作为框架。选择Hexo的原因很多，首先是静态博客，服务器开销小。其次是简洁，支持markdown语法，用起来舒服。再次是可以直接发布到github pages上。最后是插件很多，可以DIY。在博客搭建的过程中也踩了些坑，在这里做下记录，也方便大家搭建个人博客时做参考。">
@@ -423,7 +423,7 @@
 <h3 id="404页面、自定义页面"><a href="#404页面、自定义页面" class="headerlink" title="404页面、自定义页面"></a>404页面、自定义页面</h3><p>如果你不仅仅满足于NexT所提供的页面，你也可以添加自己的页面。但记住，这些页面需要放在<strong>皮肤的source文件夹</strong>下，这样在发布和部署时就能很方便的一起打包。之前自己将页面放在了根目录的source下，页面发布出来就不是自己想要的样子了。</p>
 <h3 id="部署到github-page"><a href="#部署到github-page" class="headerlink" title="部署到github page"></a>部署到github page</h3><p>当初选择hexo，一个重要的原因是可以部署到github page。官网提供了一键部署的工具，操作起来没什么坑，可以参考官方文档<a href="https://hexo.io/zh-cn/docs/deployment.html#Git" target="_blank" rel="external">https://hexo.io/zh-cn/docs/deployment.html#Git</a>。<br>但是，实际使用时，发现github page访问速度太慢，体验不是很好。</p>
 <h3 id="部署到自己的服务器上"><a href="#部署到自己的服务器上" class="headerlink" title="部署到自己的服务器上"></a>部署到自己的服务器上</h3><p>github page速度太慢，于是选择部署在自己的ECS服务器上，用nginx发布静态文件，用CDN做加速，访问速度还不错。<br>每次写完文章后，懒得手动上传文件，那么就通过插件来上传。开始试了FTPSync，通过FTP协议进行上传，我用vsftp配置好了FTP服务，但每次文件传一半就失败，不知道什么原因。后来换了SFTP插件<a href="https://hexo.io/docs/deployment.html#SFTP" target="_blank" rel="external">https://hexo.io/docs/deployment.html#SFTP</a>，通过ssh协议进行上传，很快就可以调通，所以也推荐这种方式进行一键部署。</p>
-<h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>评论功能一直没有搞定，试了很多，都不满意。<br>网易云跟贴、多说因为要关闭，没法使用，放弃。<br>友言太老，还停留再开心网的时代，放弃。<br>disqus要翻墙才能用，放弃。<br>HyperComments聊天框是繁体中文，放弃。<br>畅言可以用，但弹框太多，找了半天也没法关闭他的社区功能，目前作为备选方案。<br>也在持续的找评论插件，如果有满意的，也会尽快添加此功能，并更新此文章。</p>
+<h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>评论功能一直没有搞定，试了很多，都不满意。<br>网易云跟贴、多说因为要关闭，没法使用，放弃。<br>友言太老，还停留再开心网的时代，放弃。<br>disqus要翻墙才能用，放弃。<br>HyperComments聊天框是繁体中文，放弃。<br>畅言可以用，但支持的登录方式有点少，同时右下角弹框太多，找了半天也没法关闭，目前作为备选方案。<br>也在持续的找评论插件，如果有满意的，也会尽快添加此功能，并更新此文章。</p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>配置头像、社交账号，RSS订阅、百度统计、版权声明等，这些都可以在<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next官方文档</a>上找到对于说明，没有什么坑，只要仔细阅读文档，按照操作即可。</p>
 
       

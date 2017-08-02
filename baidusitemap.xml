@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.coolrabbit.xin/2017/08/01/other_hexo/</loc>
+    <lastmod>2017-08-02T00:43:00.908Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo静态博客</title>
+        <pubTime>2017-08-01T06:25:00.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>NexT</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="其他" url="http://www.coolrabbit.xin/categories/%E5%85%B6%E4%BB%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.coolrabbit.xin/2017/08/01/nginx/</loc>
     <lastmod>2017-08-01T23:49:26.455Z</lastmod>
     <data>
@@ -65,30 +89,6 @@
            
              
               <breadCrumb title="web" url="http://www.coolrabbit.xin/categories/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.coolrabbit.xin/2017/08/01/other_hexo/</loc>
-    <lastmod>2017-08-01T09:36:37.207Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo静态博客</title>
-        <pubTime>2017-08-01T06:25:00.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>NexT</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="其他" url="http://www.coolrabbit.xin/categories/%E5%85%B6%E4%BB%96/"/>
           
         </display>
     </data>
