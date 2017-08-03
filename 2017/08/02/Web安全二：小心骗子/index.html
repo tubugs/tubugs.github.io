@@ -95,21 +95,21 @@
 
 
 
-<meta name="description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高。但当你知道他的原理以后，你就会觉得其实也没有多难。">
+<meta name="description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高，但当你知道他的原理以后，你就会觉得其实也没有多难。这里我要说的两个骗子就是xss和csrf。">
 <meta name="keywords" content="web,安全">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web安全二：小心骗子">
 <meta property="og:url" content="http://www.coolrabbit.xin/2017/08/02/Web安全二：小心骗子/index.html">
 <meta property="og:site_name" content="张旭的博客">
-<meta property="og:description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高。但当你知道他的原理以后，你就会觉得其实也没有多难。">
+<meta property="og:description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高，但当你知道他的原理以后，你就会觉得其实也没有多难。这里我要说的两个骗子就是xss和csrf。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_security/2-1.png">
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_security/2-2.png">
 <meta property="og:image" content="http://www.coolrabbit.xin/images/web_security/2-3.jpg">
-<meta property="og:updated_time" content="2017-08-03T09:40:35.918Z">
+<meta property="og:updated_time" content="2017-08-03T10:00:54.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web安全二：小心骗子">
-<meta name="twitter:description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高。但当你知道他的原理以后，你就会觉得其实也没有多难。">
+<meta name="twitter:description" content="整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高，但当你知道他的原理以后，你就会觉得其实也没有多难。这里我要说的两个骗子就是xss和csrf。">
 <meta name="twitter:image" content="http://www.coolrabbit.xin/images/web_security/2-1.png">
 
 
@@ -415,7 +415,7 @@
       
 
       
-        <p><blockquote class="blockquote-center">整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生</blockquote><br>引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高。但当你知道他的原理以后，你就会觉得其实也没有多难。</p>
+        <p><blockquote class="blockquote-center">整个过程串起来看似天衣无缝，但是很多安全问题就是因为这个【cookie自动存储、自动携带】而产生</blockquote><br>引用自上篇文章，这篇文章就是来做说明的。XSS、CSRF这些词初听起来感觉挺牛逼的，在跟黑客这些词做下关联，瞬间觉得逼格很高，但当你知道他的原理以后，你就会觉得其实也没有多难。这里我要说的两个骗子就是xss和csrf。</p>
 <a id="more"></a>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>浏览器通过cookie和session做关联，服务端就知道当前的请求属于谁了，具体可以参考我上一篇文章的“我是谁”部分。换句话说，只要你能搞到用户的cookie，你就可以伪造用户的请求。搞到用户cookie的方法很多，我们完全可以利用浏览器【cookie自动存储、自动携带】的原理来实现，XSS和CSRF就是两种实现方式。</p>
 <h2 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h2><p>1、<strong>新浪微博XSS攻击</strong>：我们不说抽象的定义，来举个具体的例子，看下当年新浪微博是怎样被XSS攻击的，如下图。微博发帖的时候，我们不仅可以输入文字、图片，也可以输入javascript脚本，如果后台不对这些脚本做特殊处理，那么这些脚本就可以干坏事了。用户只是想看看微博，莫名奇妙的就关注了别人，可以看到5是在用户完全不知情的情况下，由浏览器自动完成的。脚本的作用是往服务器端发送关注请求，然后浏览器自动携带cookie到服务端，服务端区分用户靠的是cookie里的sessionid，sessionid还真是普通用户的sessionid，再然后就真的就关注成功了。<br><img src="\images\web_security\2-1.png" alt="upload successful"></p>
