@@ -98,7 +98,7 @@
 <meta name="description" content="爱编程，爱生活">
 <meta property="og:type" content="website">
 <meta property="og:title" content="张旭的博客">
-<meta property="og:url" content="http://www.coolrabbit.xin/archives/2017/07/index.html">
+<meta property="og:url" content="http://www.coolrabbit.xin/page/2/index.html">
 <meta property="og:site_name" content="张旭的博客">
 <meta property="og:description" content="爱编程，爱生活">
 <meta property="og:locale" content="zh-Hans">
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://www.coolrabbit.xin/archives/2017/07/"/>
+  <link rel="canonical" href="http://www.coolrabbit.xin/page/2/"/>
 
 
 
 
 
-  <title>归档 | 张旭的博客</title>
+  <title>张旭的博客</title>
   
 
 
@@ -173,7 +173,9 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -290,103 +292,334 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
+  <section id="posts" class="posts-expand">
+    
       
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.coolrabbit.xin/2017/07/31/web_performance_yahoo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张旭">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张旭的博客">
     </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/31/web_performance_yahoo/" itemprop="url">web性能优化实践</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-31T15:52:00+08:00">
+                2017-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/07/31/web_performance_yahoo/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://www.coolrabbit.xin/2017/07/31/web_performance_yahoo/" class="cy_cmt_count" data-xid="2017/07/31/web_performance_yahoo/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2017/07/31/web_performance_yahoo/" class="leancloud_visitors" data-flag-title="web性能优化实践">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
         </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017/07/31/web_performance_yahoo/" itemprop="url">
-              
-                <span itemprop="name">web性能优化实践</span>
-              
+          <p>用户体验这几年被提及的越来越多，产品不再仅仅满足于实现功能，对于用户的使用感受也越来越重视。加载延迟、操作卡顿这些性能问题，都会严重影响用户体验，尤其在手机端，这些问题会被放大。<br>那么如何来做性能优化呢？雅虎的工程师，总结了一套web性能优化最佳实践，业内俗称雅虎军规，雅虎军规目前一共35条，写的非常详细。本文参考雅虎军规，侧重于实践，结合项目来看下如何做优化，以及优化所带来的提升。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/31/web_performance_yahoo/#more" rel="contents">
+              阅读全文 &raquo;
             </a>
+          </div>
+          <!--/noindex-->
         
-      </h3>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-31T15:52:00+08:00"
-              content="2017-07-31" >
-          07-31
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.coolrabbit.xin/2017/07/30/web_tools/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张旭">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张旭的博客">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017/07/30/web_tools/" itemprop="url">
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/30/web_tools/" itemprop="url">web开发小工具</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
-                <span itemprop="name">web开发小工具</span>
+                <span class="post-meta-item-text">发表于</span>
               
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-30T08:28:00+08:00">
+                2017-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/07/30/web_tools/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://www.coolrabbit.xin/2017/07/30/web_tools/" class="cy_cmt_count" data-xid="2017/07/30/web_tools/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2017/07/30/web_tools/" class="leancloud_visitors" data-flag-title="web开发小工具">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          工欲善其事必先利其器，本文重点介绍web开发小工具，包含分辨率测试、H5测试、性能测试等工具。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/30/web_tools/">
+              阅读全文 &raquo;
             </a>
+          </div>
+          <!--/noindex-->
         
-      </h3>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-30T08:28:00+08:00"
-              content="2017-07-30" >
-          07-30
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
-
     
-
   </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
 
@@ -618,12 +851,10 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
+  
 
   
 
@@ -658,18 +889,7 @@
 
 
   
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cyt8EUF2j';
-      var conf = '4c7c2b0ff60cbfb88a53888847e42ac4';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt8EUF2j"></script>
   
 
 
