@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.coolrabbit.xin/"/>
-  <updated>2017-08-05T15:29:35.217Z</updated>
+  <updated>2017-08-06T00:39:05.911Z</updated>
   <id>http://www.coolrabbit.xin/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://www.coolrabbit.xin/2017/08/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://www.coolrabbit.xin/2017/08/05/个人博客搭建/</id>
     <published>2017-08-05T07:29:00.000Z</published>
-    <updated>2017-08-05T15:29:35.217Z</updated>
+    <updated>2017-08-06T00:39:05.911Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;为什么要写博客？&quot;&gt;&lt;a href=&quot;#为什么要写博客？&quot; class=&quot;headerlink&quot; title=&quot;为什么要写博客？&quot;&gt;&lt;/a&gt;为什么要写博客？&lt;/h2&gt;&lt;p&gt;在写博客之前，我们需要先思考下这个问题，毕竟写博客是要耗费大量精力的，而且是不赚钱的，你能接受吗？&lt;br&gt;写博客在我看来是一种习惯，可以让我们更好的去总结、分享、交流提升、同时建立个人品牌，最重要的是思考，最困难是坚持。&lt;/p&gt;
 &lt;h2 id=&quot;为什么要搭建个人博客？&quot;&gt;&lt;a href=&quot;#为什么要搭建个人博客？&quot; class=&quot;headerlink&quot; title=&quot;为什么要搭建个人博客？&quot;&gt;&lt;/a&gt;为什么要搭建个人博客？&lt;/h2&gt;&lt;p&gt;有很多的博客平台，如简书、CSDN，做的也都很不错，为什么不用它们呢？&lt;br&gt;第一点，个人博客+独立域名对于个人品牌的树立更加有帮助。&lt;br&gt;第二点，可以把博客做成你想要的样子，对博客拥有完全的控制权。&lt;/p&gt;
-&lt;h2 id=&quot;个人博客的成本？&quot;&gt;&lt;a href=&quot;#个人博客的成本？&quot; class=&quot;headerlink&quot; title=&quot;个人博客的成本？&quot;&gt;&lt;/a&gt;个人博客的成本？&lt;/h2&gt;&lt;p&gt;以我的这个博客为例，精打细算一年下来是300元，还可以接受吧？&lt;/p&gt;
+&lt;h2 id=&quot;个人博客的成本？&quot;&gt;&lt;a href=&quot;#个人博客的成本？&quot; class=&quot;headerlink&quot; title=&quot;个人博客的成本？&quot;&gt;&lt;/a&gt;个人博客的成本？&lt;/h2&gt;&lt;p&gt;以我的这个博客为例，云服务器+域名的方案，精打细算一年下来是300元，还可以接受吧？&lt;br&gt;也有更便宜的方案，如果选择静态博客，可以不用购买服务器，直接部署到github pages上，同时可以绑定自己的域名，只要出个几十块钱的域名钱。&lt;br&gt;
     
     </summary>
     
