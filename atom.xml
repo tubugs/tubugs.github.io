@@ -4,9 +4,9 @@
   <subtitle>兔八哥的编程世界</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.coolrabbit.xin/"/>
+  <link href="http://blog.tubugs.cn/"/>
   <updated>2017-08-06T00:39:05.911Z</updated>
-  <id>http://www.coolrabbit.xin/</id>
+  <id>http://blog.tubugs.cn/</id>
   
   <author>
     <name>张旭</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>个人博客搭建</title>
-    <link href="http://www.coolrabbit.xin/2017/08/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <id>http://www.coolrabbit.xin/2017/08/05/个人博客搭建/</id>
+    <link href="http://blog.tubugs.cn/2017/08/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://blog.tubugs.cn/2017/08/05/个人博客搭建/</id>
     <published>2017-08-05T07:29:00.000Z</published>
     <updated>2017-08-06T00:39:05.911Z</updated>
     
@@ -30,17 +30,17 @@
     
     </summary>
     
-      <category term="其他" scheme="http://www.coolrabbit.xin/categories/%E5%85%B6%E4%BB%96/"/>
+      <category term="其他" scheme="http://blog.tubugs.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-      <category term="博客" scheme="http://www.coolrabbit.xin/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://blog.tubugs.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>Web安全二：小心骗子(XSS、CSRF)</title>
-    <link href="http://www.coolrabbit.xin/2017/08/02/Web%E5%AE%89%E5%85%A8%E4%BA%8C%EF%BC%9A%E5%B0%8F%E5%BF%83%E9%AA%97%E5%AD%90/"/>
-    <id>http://www.coolrabbit.xin/2017/08/02/Web安全二：小心骗子/</id>
+    <link href="http://blog.tubugs.cn/2017/08/02/Web%E5%AE%89%E5%85%A8%E4%BA%8C%EF%BC%9A%E5%B0%8F%E5%BF%83%E9%AA%97%E5%AD%90/"/>
+    <id>http://blog.tubugs.cn/2017/08/02/Web安全二：小心骗子/</id>
     <published>2017-08-02T09:27:00.000Z</published>
     <updated>2017-08-04T03:05:10.107Z</updated>
     
@@ -50,19 +50,19 @@
     
     </summary>
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/categories/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/categories/%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="web" scheme="http://www.coolrabbit.xin/tags/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/tags/web/"/>
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/tags/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/tags/%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
   <entry>
     <title>Web安全一：上网的过程中发生了什么(DNS、Cookie、Session)</title>
-    <link href="http://www.coolrabbit.xin/2017/08/02/Web%E5%AE%89%E5%85%A8%E4%B8%80%EF%BC%9A%E4%B8%8A%E7%BD%91%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/"/>
-    <id>http://www.coolrabbit.xin/2017/08/02/Web安全一：上网的过程中发生了什么/</id>
+    <link href="http://blog.tubugs.cn/2017/08/02/Web%E5%AE%89%E5%85%A8%E4%B8%80%EF%BC%9A%E4%B8%8A%E7%BD%91%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/"/>
+    <id>http://blog.tubugs.cn/2017/08/02/Web安全一：上网的过程中发生了什么/</id>
     <published>2017-08-02T08:42:00.000Z</published>
     <updated>2017-08-04T03:05:36.222Z</updated>
     
@@ -72,19 +72,19 @@
     
     </summary>
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/categories/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/categories/%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="web" scheme="http://www.coolrabbit.xin/tags/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/tags/web/"/>
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/tags/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/tags/%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
   <entry>
     <title>nginx</title>
-    <link href="http://www.coolrabbit.xin/2017/08/01/nginx/"/>
-    <id>http://www.coolrabbit.xin/2017/08/01/nginx/</id>
+    <link href="http://blog.tubugs.cn/2017/08/01/nginx/"/>
+    <id>http://blog.tubugs.cn/2017/08/01/nginx/</id>
     <published>2017-08-01T13:26:00.000Z</published>
     <updated>2017-08-05T15:26:16.391Z</updated>
     
@@ -95,21 +95,21 @@
     
     </summary>
     
-      <category term="中间件" scheme="http://www.coolrabbit.xin/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://blog.tubugs.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
     
-      <category term="中间件" scheme="http://www.coolrabbit.xin/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://blog.tubugs.cn/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="后台" scheme="http://www.coolrabbit.xin/tags/%E5%90%8E%E5%8F%B0/"/>
+      <category term="后台" scheme="http://blog.tubugs.cn/tags/%E5%90%8E%E5%8F%B0/"/>
     
-      <category term="nginx" scheme="http://www.coolrabbit.xin/tags/nginx/"/>
+      <category term="nginx" scheme="http://blog.tubugs.cn/tags/nginx/"/>
     
   </entry>
   
   <entry>
     <title>数字签名是什么</title>
-    <link href="http://www.coolrabbit.xin/2017/08/01/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E6%98%AF%E4%BB%80%E4%B9%88/"/>
-    <id>http://www.coolrabbit.xin/2017/08/01/数字签名是什么/</id>
+    <link href="http://blog.tubugs.cn/2017/08/01/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <id>http://blog.tubugs.cn/2017/08/01/数字签名是什么/</id>
     <published>2017-08-01T12:53:00.000Z</published>
     <updated>2017-08-04T00:10:30.856Z</updated>
     
@@ -123,19 +123,19 @@
     
     </summary>
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/categories/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/categories/%E5%AE%89%E5%85%A8/"/>
     
     
-      <category term="安全" scheme="http://www.coolrabbit.xin/tags/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="http://blog.tubugs.cn/tags/%E5%AE%89%E5%85%A8/"/>
     
-      <category term="数字签名" scheme="http://www.coolrabbit.xin/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/"/>
+      <category term="数字签名" scheme="http://blog.tubugs.cn/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/"/>
     
   </entry>
   
   <entry>
     <title>Hexo静态博客</title>
-    <link href="http://www.coolrabbit.xin/2017/08/01/other_hexo/"/>
-    <id>http://www.coolrabbit.xin/2017/08/01/other_hexo/</id>
+    <link href="http://blog.tubugs.cn/2017/08/01/other_hexo/"/>
+    <id>http://blog.tubugs.cn/2017/08/01/other_hexo/</id>
     <published>2017-08-01T06:25:00.000Z</published>
     <updated>2017-08-02T00:43:00.908Z</updated>
     
@@ -146,21 +146,21 @@
     
     </summary>
     
-      <category term="其他" scheme="http://www.coolrabbit.xin/categories/%E5%85%B6%E4%BB%96/"/>
+      <category term="其他" scheme="http://blog.tubugs.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
-      <category term="hexo" scheme="http://www.coolrabbit.xin/tags/hexo/"/>
+      <category term="hexo" scheme="http://blog.tubugs.cn/tags/hexo/"/>
     
-      <category term="NexT" scheme="http://www.coolrabbit.xin/tags/NexT/"/>
+      <category term="NexT" scheme="http://blog.tubugs.cn/tags/NexT/"/>
     
-      <category term="博客" scheme="http://www.coolrabbit.xin/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://blog.tubugs.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>web性能优化实践</title>
-    <link href="http://www.coolrabbit.xin/2017/07/31/web_performance_yahoo/"/>
-    <id>http://www.coolrabbit.xin/2017/07/31/web_performance_yahoo/</id>
+    <link href="http://blog.tubugs.cn/2017/07/31/web_performance_yahoo/"/>
+    <id>http://blog.tubugs.cn/2017/07/31/web_performance_yahoo/</id>
     <published>2017-07-31T07:52:00.000Z</published>
     <updated>2017-08-01T09:39:27.221Z</updated>
     
@@ -170,19 +170,19 @@
     
     </summary>
     
-      <category term="web" scheme="http://www.coolrabbit.xin/categories/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/categories/web/"/>
     
     
-      <category term="web" scheme="http://www.coolrabbit.xin/tags/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/tags/web/"/>
     
-      <category term="性能" scheme="http://www.coolrabbit.xin/tags/%E6%80%A7%E8%83%BD/"/>
+      <category term="性能" scheme="http://blog.tubugs.cn/tags/%E6%80%A7%E8%83%BD/"/>
     
   </entry>
   
   <entry>
     <title>web开发小工具</title>
-    <link href="http://www.coolrabbit.xin/2017/07/30/web_tools/"/>
-    <id>http://www.coolrabbit.xin/2017/07/30/web_tools/</id>
+    <link href="http://blog.tubugs.cn/2017/07/30/web_tools/"/>
+    <id>http://blog.tubugs.cn/2017/07/30/web_tools/</id>
     <published>2017-07-30T00:28:00.000Z</published>
     <updated>2017-08-01T04:01:10.895Z</updated>
     
@@ -192,12 +192,12 @@
     
     </summary>
     
-      <category term="web" scheme="http://www.coolrabbit.xin/categories/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/categories/web/"/>
     
     
-      <category term="web" scheme="http://www.coolrabbit.xin/tags/web/"/>
+      <category term="web" scheme="http://blog.tubugs.cn/tags/web/"/>
     
-      <category term="工具" scheme="http://www.coolrabbit.xin/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://blog.tubugs.cn/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
