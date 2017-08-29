@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tubugs.cn/"/>
-  <updated>2017-08-06T00:39:05.911Z</updated>
+  <updated>2017-08-29T23:17:15.605Z</updated>
   <id>http://blog.tubugs.cn/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从markdown到gitbook，高逼格写作必备工具</title>
+    <link href="http://blog.tubugs.cn/2017/08/30/%E4%BB%8Emarkdown%E5%88%B0gitbook%EF%BC%8C%E9%AB%98%E9%80%BC%E6%A0%BC%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87%E5%B7%A5%E5%85%B7/"/>
+    <id>http://blog.tubugs.cn/2017/08/30/从markdown到gitbook，高逼格写作必备工具/</id>
+    <published>2017-08-29T23:07:00.000Z</published>
+    <updated>2017-08-29T23:17:15.605Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;MarkDown&quot;&gt;&lt;a href=&quot;#MarkDown&quot; class=&quot;headerlink&quot; title=&quot;MarkDown&quot;&gt;&lt;/a&gt;MarkDown&lt;/h3&gt;&lt;p&gt;如果你热爱写作，那么你一定要尝试下markdown，要知道大部分博客平台都支持markdow
+    
+    </summary>
+    
+      <category term="工具" scheme="http://blog.tubugs.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="markdown" scheme="http://blog.tubugs.cn/tags/markdown/"/>
+    
+      <category term="gitbook" scheme="http://blog.tubugs.cn/tags/gitbook/"/>
+    
+  </entry>
   
   <entry>
     <title>个人博客搭建</title>
