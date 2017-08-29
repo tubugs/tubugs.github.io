@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.tubugs.cn/2017/07/30/web_tools/</loc>
+    
+    <lastmod>2017-08-29T22:43:35.499Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.tubugs.cn/2017/08/05/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2017-08-06T00:39:05.911Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://blog.tubugs.cn/2017/07/31/web_performance_yahoo/</loc>
     
     <lastmod>2017-08-01T09:39:27.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tubugs.cn/2017/07/30/web_tools/</loc>
-    
-    <lastmod>2017-08-01T04:01:10.895Z</lastmod>
     
   </url>
   
